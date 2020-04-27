@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct Pokemon{
+struct Pokemon: Codable{
     var name: String
     var no: String
     var type: [String]
+    var hasBeenCaught: Bool = false
 }

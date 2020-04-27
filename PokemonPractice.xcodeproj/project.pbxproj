@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B06A982245673DD002EA490 /* PokemonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B06A981245673DD002EA490 /* PokemonController.swift */; };
 		0B2DA9E0244BE3CC000807C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2DA9DF244BE3CC000807C6 /* AppDelegate.swift */; };
 		0B2DA9E2244BE3CC000807C6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2DA9E1244BE3CC000807C6 /* SceneDelegate.swift */; };
 		0B2DA9E7244BE3CC000807C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2DA9E5244BE3CC000807C6 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B06A981245673DD002EA490 /* PokemonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonController.swift; sourceTree = "<group>"; };
 		0B2DA9DC244BE3CC000807C6 /* PokemonPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2DA9DF244BE3CC000807C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B2DA9E1244BE3CC000807C6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B06A983245673E3002EA490 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B06A981245673DD002EA490 /* PokemonController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		0B2DA9D3244BE3CC000807C6 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				0BB2CDEB244BF23B00E2B8A8 /* Pokemon.swift */,
+				0B06A983245673E3002EA490 /* Model Controller */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B2DA9FC244BE80C000807C6 /* AddPokemonViewController.swift in Sources */,
+				0B06A982245673DD002EA490 /* PokemonController.swift in Sources */,
 				0B2DA9FA244BE7FA000807C6 /* PokedexTableViewController.swift in Sources */,
 				0B2DA9E0244BE3CC000807C6 /* AppDelegate.swift in Sources */,
 				0B2DA9FF244BE828000807C6 /* PokemonTableViewCell.swift in Sources */,

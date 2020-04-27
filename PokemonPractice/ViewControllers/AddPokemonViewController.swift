@@ -19,6 +19,7 @@ class AddPokemonViewController: UIViewController {
     @IBOutlet weak var PokemonTypeTextField1: UITextField!
     @IBOutlet weak var pokemonTypeTextField2: UITextField!
     
+    var pokemonController = PokemonController()
     var delegate: AddPokemonDelegate?
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
@@ -31,8 +32,8 @@ class AddPokemonViewController: UIViewController {
             !name.isEmpty,
             !no.isEmpty
         else { return }
-        
-        var newPokemon = Pokemon(name: name, no: no, type: [])
+
+        var newPokemon = pokemonController.createPokemon(name: name, no: no, type: [])
         
         if let type1 = PokemonTypeTextField1.text,
         !type1.isEmpty{

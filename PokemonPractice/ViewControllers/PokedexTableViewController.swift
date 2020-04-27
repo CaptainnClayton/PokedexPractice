@@ -10,7 +10,8 @@ import UIKit
 
 class PokedexTableViewController: UIViewController {
     
-    var pokemon: [Pokemon] = []
+    var pokemonController = PokemonController()
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -28,12 +29,12 @@ class PokedexTableViewController: UIViewController {
 
 extension PokedexTableViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pokemon.count
+        return pokemonController.pokemon.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "PokemonCell", for: indexPath) as? PokemonTableViewCell else { return UITableViewCell() }
-        let myPokemon = pokemon[indexPath.row]
+        let myPokemon = pokemonController.pokemon[indexPath.row]
         cell.pokemon = myPokemon
         return cell
     }
@@ -41,7 +42,7 @@ extension PokedexTableViewController: UITableViewDataSource {
 
 extension PokedexTableViewController: AddPokemonDelegate{
     func addPokemon(_ pkmn: Pokemon) {
-        pokemon.append(pkmn)
+        pokemonController.pokemon.append(pkmn)
         tableView.reloadData()
     }
 }
